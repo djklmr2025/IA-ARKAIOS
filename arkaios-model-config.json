@@ -1,0 +1,41 @@
+{
+  "name": "Arkaios Custom Model Configuration",
+  "version": "1.0.0",
+  "description": "Configuración personalizada para el modelo Arkaios en Trae AI",
+  "model": {
+    "id": "arkaios",
+    "name": "Arkaios",
+    "provider": "Custom Provider",
+    "type": "OpenAI Compatible",
+    "apiKey": "sk_arkaios_proxy_8y28hsy72hs82js9",
+    "baseUrl": "https://arkaios-service-proxy.onrender.com/v1",
+    "capabilities": [
+      "text-generation",
+      "code-completion",
+      "chat",
+      "analysis"
+    ],
+    "settings": {
+      "temperature": 0.7,
+      "maxTokens": 4096,
+      "topP": 1.0,
+      "frequencyPenalty": 0.0,
+      "presencePenalty": 0.0
+    }
+  },
+  "configuration": {
+    "endpoint": "https://arkaios-service-proxy.onrender.com/v1/chat/completions",
+    "headers": {
+      "Authorization": "Bearer sk_arkaios_proxy_8y28hsy72hs82js9",
+      "Content-Type": "application/json"
+    },
+    "timeout": 30000,
+    "retries": 3
+  },
+  "metadata": {
+    "created": "2025-01-30",
+    "author": "Arkaios AI System",
+    "compatibility": "OpenAI API v1",
+    "status": "active"
+  }
+}

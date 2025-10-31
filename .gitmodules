@@ -1,0 +1,3 @@
+[submodule "arkaios-service-proxy"]
+	path = arkaios-service-proxy
+	url = https://github.com/djklmr2025/arkaios-service-proxy.git
