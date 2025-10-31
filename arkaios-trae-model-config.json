@@ -1,0 +1,13 @@
+﻿{
+    "capabilities":  [
+                         "text-generation",
+                         "code-completion",
+                         "chat",
+                         "analysis"
+                     ],
+    "name":  "Arkaios Lab (Local)",
+    "apiKey":  "sk_arkaios_proxy_8y28hsy72hs82js9",
+    "provider":  "OpenAI Compatible",
+    "modelId":  "lab",
+    "baseUrl":  "http://127.0.0.1:4000/v1"
+}

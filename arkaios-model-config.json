@@ -1,19 +1,20 @@
 {
-  "name": "Arkaios Custom Model Configuration",
-  "version": "1.0.0",
-  "description": "Configuración personalizada para el modelo Arkaios en Trae AI",
+  "name": "Arkaios Local Model Configuration",
+  "version": "1.1.0",
+  "description": "Configuración local para el modelo Arkaios Lab en Trae AI",
   "model": {
-    "id": "arkaios",
-    "name": "Arkaios",
-    "provider": "Custom Provider",
+    "id": "lab",
+    "name": "Arkaios Lab (Local)",
+    "provider": "OpenAI Compatible",
     "type": "OpenAI Compatible",
     "apiKey": "sk_arkaios_proxy_8y28hsy72hs82js9",
-    "baseUrl": "https://arkaios-service-proxy.onrender.com/v1",
+    "baseUrl": "http://127.0.0.1:4000/v1",
     "capabilities": [
       "text-generation",
       "code-completion",
       "chat",
-      "analysis"
+      "analysis",
+      "local-processing"
     ],
     "settings": {
       "temperature": 0.7,
@@ -24,7 +25,7 @@
     }
   },
   "configuration": {
-    "endpoint": "https://arkaios-service-proxy.onrender.com/v1/chat/completions",
+    "endpoint": "http://127.0.0.1:4000/v1/chat/completions",
     "headers": {
       "Authorization": "Bearer sk_arkaios_proxy_8y28hsy72hs82js9",
       "Content-Type": "application/json"
@@ -34,8 +35,10 @@
   },
   "metadata": {
     "created": "2025-01-30",
+    "updated": "2025-01-30",
     "author": "Arkaios AI System",
     "compatibility": "OpenAI API v1",
-    "status": "active"
+    "status": "active",
+    "environment": "local"
   }
 }
